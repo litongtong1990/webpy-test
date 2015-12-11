@@ -1,0 +1,14 @@
+$def with(BookList)
+        <table border="1" align = center>
+            <tr>
+                <th>书名</th>
+                <th>时间</th>
+                <th>大小</th>                                
+            </tr>
+            $for item in BookList:
+            <tr>
+                <td id="tdstyle">$item.name</td>
+                <td id="tdstyle">$item.last_modified</td>
+                <td id="tdstyle">$item.bytes</td>       
+            </tr>
+        </table>
