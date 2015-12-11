@@ -12,6 +12,5 @@ COPY code.py /usr/local/bin/code.py
 
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/code.py
-RUN python /usr/local/bin/code.py
 EXPOSE 8080
-CMD [""]
+ENTRYPOINT ["docker-entrypoint.sh"]
